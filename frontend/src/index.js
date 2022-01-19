@@ -1,3 +1,15 @@
+import ReactDOM from "react-dom";
+import { App } from "./App";
+
+if (module.hot) {
+  module.hot.accept();
+}
+
+const app = document.getElementById("app");
+ReactDOM.render(<App />, app);
+
+
+
 // cons
 const LETTER_STATE_EMPTY = "empty"
 const LETTER_STATE_GUESSED = "guessed"
@@ -71,8 +83,8 @@ function handleKey(ev) {
     }
 }
 
-window.addEventListener("load", init)
-window.addEventListener("keydown", handleKey)
+// window.addEventListener("load", init)
+// window.addEventListener("keydown", handleKey)
 
 // events
 let state = initState()
