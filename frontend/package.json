@@ -2,10 +2,12 @@
   "name": "frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "MIT"
+  "author": "Nikita Arkhipov",
+  "license": "MIT",
+
+  "source": "src/index.html",
+  "browsersList": "> 0.5%, last 2 versions, not dead",
+  "devDependencies": {
+    "parcel": "latest"
+  }
 }
