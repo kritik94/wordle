@@ -7,7 +7,14 @@
 
   "source": "src/index.html",
   "browsersList": "> 0.5%, last 2 versions, not dead",
+  "parcelIgnore": [
+    "/apple-touch-icon.png",
+    "/favicon*",
+    "/site.webmanifest",
+    "/android-chrome-*"
+  ],
   "devDependencies": {
-    "parcel": "latest"
+    "parcel": "^2.2.1",
+    "parcel-resolver-ignore": "^2.0.0"
   }
 }
